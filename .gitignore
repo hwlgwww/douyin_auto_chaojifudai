@@ -1,2 +1,2 @@
-./node_modules
-./tophone.sh
+node_modules/
+tophone.sh
