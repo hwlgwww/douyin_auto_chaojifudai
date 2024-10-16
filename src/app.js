@@ -11,8 +11,8 @@ function clickElementTask(elementInfo, name) {
         if (!element.visibleToUser()) continue
         if (element.comfirm && !elementInfo.comfirm(element))
             continue
-        if (element.then) {
-            element.then()
+        if (elementInfo.then) {
+            elementInfo.then()
         } else {
             ClickUtil.click(element)
             console.log('clicked', name)
